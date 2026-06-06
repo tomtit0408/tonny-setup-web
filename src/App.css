@@ -971,3 +971,239 @@ a {
   font-weight: 800;
   cursor: pointer;
 }
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 992px) {
+  .header {
+    padding: 18px 5%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .video-section,
+  .section,
+  .about-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .video-text h1,
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .grid-3,
+  .project-gallery,
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-layout,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-right img {
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 16px 5%;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .video-section {
+    padding: 24px 5% 60px;
+  }
+
+  .video-wrapper {
+    border-radius: 16px;
+  }
+
+  .intro-video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .video-text {
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  .video-text h1 {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  .video-text > p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section,
+  .about-section {
+    padding: 64px 5%;
+  }
+
+  .section-title {
+    margin-bottom: 34px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .grid-3,
+  .project-gallery,
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card,
+  .package-card,
+  .process-card,
+  .project-card,
+  .about-left,
+  .contact-info,
+  .contact-form {
+    border-radius: 20px;
+    padding: 22px;
+  }
+
+  .service-card h3,
+  .package-card h3,
+  .process-card h3,
+  .project-content h3 {
+    font-size: 20px;
+  }
+
+  .package-card h4 {
+    font-size: 24px;
+  }
+
+  .about-left h3 {
+    font-size: 26px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .about-right {
+    border-radius: 20px;
+  }
+
+  .about-right img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .project-image {
+    height: 230px;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .contact-info h3 {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 46px 5%;
+  }
+
+  .footer-links {
+    gap: 14px;
+  }
+
+  .chat-toggle {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .chatbot-box {
+    right: 12px;
+    left: 12px;
+    bottom: 84px;
+    width: auto;
+    height: 72vh;
+    border-radius: 20px;
+  }
+
+  .chatbot-messages {
+    padding: 14px;
+  }
+
+  .message {
+    max-width: 92%;
+    font-size: 13px;
+  }
+
+  .quick-questions {
+    padding: 0 12px 10px;
+  }
+
+  .quick-questions button {
+    font-size: 11px;
+  }
+
+  .chatbot-input {
+    padding: 12px;
+  }
+
+  .chatbot-input input {
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .chatbot-input button {
+    padding: 10px 14px;
+  }
+}
