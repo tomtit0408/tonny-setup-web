@@ -980,9 +980,7 @@ a {
     padding: 18px 5%;
   }
 
-  .nav {
-    display: none;
-  }
+
 
   .header-btn {
     padding: 10px 16px;
@@ -1205,5 +1203,127 @@ a {
 
   .chatbot-input button {
     padding: 10px 14px;
+  }
+}
+/* =========================
+   MOBILE HAMBURGER MENU
+========================= */
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+  margin: 5px auto;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.menu-backdrop {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    top: 76px;
+    right: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 16px;
+    border-radius: 22px;
+    background: rgba(7, 11, 18, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(18px);
+    z-index: 1001;
+
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+    transition: 0.3s;
+  }
+
+  .nav.nav-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 15px 16px;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .nav a:hover {
+    background: rgba(0, 229, 255, 0.1);
+    color: #00e5ff;
+  }
+
+  .menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 14px 5%;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav {
+    top: 68px;
+    left: 4%;
+    right: 4%;
   }
 }
